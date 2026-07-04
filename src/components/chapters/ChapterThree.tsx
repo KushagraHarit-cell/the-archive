@@ -53,7 +53,7 @@ export default function ChapterThree() {
           <video
             ref={videoRef}
             className="w-full h-full object-cover opacity-80"
-            src="YAXO1680.mp4"
+            src="/YAXO1680.MP4"
             loop
             muted={false}
             playsInline

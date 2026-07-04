@@ -4,11 +4,11 @@ import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 
 const MOCK_IMAGES = [
-  'IMG_2715.jpg',
-  'IMG_2753.jpg',
-  'IMG_E2558.jpg',
-  'IMG_E2595.jpg',
-  'MQSJ5353.jpg',
+  '/IMG_2715.JPG',
+  '/IMG_2753.JPG',
+  '/IMG_E2558.JPG',
+  '/IMG_E2595.JPG',
+  '/MQSJ5353.JPG',
 ];
 
 export default function ChapterTwo() {
