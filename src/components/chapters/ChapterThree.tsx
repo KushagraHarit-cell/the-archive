@@ -29,12 +29,12 @@ export default function ChapterThree() {
 
   return (
     <div className="min-h-screen w-full flex items-center justify-center relative bg-[var(--background)] px-6">
-      
+
       {/* Cinema Mode Background */}
       <div className={`absolute inset-0 bg-black transition-opacity duration-1000 ${isPlaying ? 'opacity-100 z-0' : 'opacity-0 -z-10'}`} />
 
       <div className="max-w-5xl w-full relative z-10 flex flex-col items-center">
-        
+
         <div className={`text-center mb-12 transition-opacity duration-700 ${isPlaying ? 'opacity-0' : 'opacity-100'}`}>
           <span className="font-sans text-[10px] uppercase tracking-[0.4em] text-[var(--secondary)] mb-6 block">
             Chapter 03
@@ -43,17 +43,17 @@ export default function ChapterThree() {
         </div>
 
         {/* Video Container */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.2 }}
           className="relative w-full aspect-video bg-[var(--surface)] cinematic-shadow group overflow-hidden border border-[var(--secondary)]/10"
         >
           {/* We use a placeholder video for demonstration */}
-          <video 
+          <video
             ref={videoRef}
             className="w-full h-full object-cover opacity-80"
-            src="https://www.w3schools.com/html/mov_bbb.mp4"
+            src="YAXO1680.mp4"
             loop
             muted={false}
             playsInline
@@ -65,13 +65,13 @@ export default function ChapterThree() {
           {/* Custom Controls */}
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
             <div className="flex items-center justify-between w-full">
-              <button 
+              <button
                 onClick={togglePlay}
                 className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-white/10 transition-colors backdrop-blur-md"
               >
                 {isPlaying ? <Pause className="w-5 h-5 fill-current" /> : <Play className="w-5 h-5 fill-current ml-1" />}
               </button>
-              
+
               {/* Subtitles Area (Mock) */}
               <div className="flex-grow text-center px-4">
                 {isPlaying && (
@@ -81,7 +81,7 @@ export default function ChapterThree() {
                 )}
               </div>
 
-              <button 
+              <button
                 onClick={handleFullscreen}
                 className="w-10 h-10 rounded-full flex items-center justify-center text-white/70 hover:text-white transition-colors"
               >

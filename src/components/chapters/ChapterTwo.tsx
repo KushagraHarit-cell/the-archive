@@ -4,16 +4,16 @@ import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 
 const MOCK_IMAGES = [
-  'https://images.unsplash.com/photo-1616423640778-28d1b53229bd?auto=format&fit=crop&q=80&w=800',
-  'https://images.unsplash.com/photo-1510076857177-7470076d4098?auto=format&fit=crop&q=80&w=800',
-  'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&q=80&w=800',
-  'https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&q=80&w=800',
-  'https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&q=80&w=800',
+  'IMG_2715.jpg',
+  'IMG_2753.jpg',
+  'IMG_E2558.jpg',
+  'IMG_E2595.jpg',
+  'MQSJ5353.jpg',
 ];
 
 export default function ChapterTwo() {
   const containerRef = useRef(null);
-  
+
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start end", "end start"]
@@ -35,7 +35,7 @@ export default function ChapterTwo() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
-          
+
           {/* Column 1 */}
           <motion.div style={{ y: y1 }} className="flex flex-col gap-12 pt-24">
             <div className="relative aspect-[3/4] overflow-hidden group paper-shadow">
