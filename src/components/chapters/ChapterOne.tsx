@@ -8,7 +8,7 @@ export default function ChapterOne() {
   const [showText, setShowText] = useState(false);
 
   // Typewriter effect variables
-  const message = "Some moments are quiet, unassuming. But they shift the trajectory of your entire life. This is where our archive begins.";
+  const message = "Kuch moments bahut simple hote hain... na koi shor, na koi grand beginning. Phir bhi wahi moments poori life ki direction badal dete hai Pata hi nahi chala kab teri baatein meri aadat ban gayi, kab teri smile meri favourite cheez ban gayi, aur kab tera khayal rakhna meri routine nahi, meri khushi ban gaya. Shayad humari story kisi ek bade moment se shuru nahi hui... balki un hazaar chhoti-chhoti baaton se, jo dheere dheere mujhe sirf tere paas le aayi. 🤍";
   const words = message.split(' ');
 
   return (
@@ -29,7 +29,7 @@ export default function ChapterOne() {
           >
             {/* The Envelope Representation */}
             <div className="w-[300px] md:w-[500px] h-[200px] md:h-[320px] bg-[var(--surface)] border border-[var(--secondary)]/20 paper-shadow relative flex items-center justify-center overflow-hidden transition-transform duration-700 group-hover:scale-105">
-              
+
               {/* Flap lines */}
               <div className="absolute top-0 left-0 w-full h-full">
                 <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
@@ -42,7 +42,7 @@ export default function ChapterOne() {
               <div className="w-12 h-12 rounded-full bg-[var(--accent)] absolute z-10 flex items-center justify-center shadow-lg transition-transform duration-500 group-hover:scale-90">
                 <span className="text-[var(--background)] font-serif text-xl italic">A</span>
               </div>
-              
+
               <span className="absolute bottom-6 text-[8px] uppercase tracking-[0.4em] text-[var(--secondary)]">Click to break seal</span>
             </div>
           </motion.div>
@@ -56,7 +56,7 @@ export default function ChapterOne() {
           >
             {/* The Unfolded Paper */}
             <div className="bg-[var(--paper)] text-[var(--background)] p-12 md:p-24 min-h-[60vh] cinematic-shadow relative overflow-hidden flex flex-col justify-center">
-              
+
               {/* Paper Texture Overlay */}
               <div className="absolute inset-0 opacity-40 pointer-events-none mix-blend-multiply" style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=\'0 0 200 200\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cfilter id=\'noiseFilter\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'0.8\' numOctaves=\'3\' stitchTiles=\'stitch\'/%3E%3C/filter%3E%3Crect width=\'100%25\' height=\'100%25\' filter=\'url(%23noiseFilter)\'/%3E%3C/svg%3E")' }} />
 
