@@ -35,7 +35,7 @@ export default function LandingPage() {
       {/* Title */}
       <div className="flex flex-col items-center text-center z-10 mb-20">
         <h1 className="font-serif text-[clamp(60px,10vw,140px)] text-[var(--text)] tracking-tight">
-          The Archive
+          For My Forever Favourite
         </h1>
         <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-[var(--secondary)] mt-6">
           For one extraordinary person.
@@ -63,7 +63,7 @@ export default function LandingPage() {
       <div className="z-10 mt-8">
         <Link href="/timeline" className="group relative px-8 py-4 flex items-center justify-center cursor-pointer">
           <span className="relative z-10 text-[9px] uppercase tracking-[0.3em] font-sans text-[var(--text)] transition-colors duration-500 group-hover:text-[var(--background)]">
-            Enter Archive
+            Sirf aapke liye
           </span>
           <div className="absolute inset-0 border border-[var(--text)]/20 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:bg-[var(--text)] group-hover:scale-105" />
         </Link>

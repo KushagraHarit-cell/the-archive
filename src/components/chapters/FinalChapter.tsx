@@ -37,7 +37,7 @@ export default function FinalChapter() {
             Happy<br/>Birthday
           </h1>
           <p className="font-sans text-sm uppercase tracking-widest text-[#999999]">
-            The Archive is now fully unlocked.
+            For My Forever Favourite is now fully unlocked.
           </p>
         </motion.div>
       </div>

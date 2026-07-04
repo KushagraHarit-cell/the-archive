@@ -19,7 +19,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "The Archive",
+  title: "For My Forever Favourite",
   description: "A private collection of memories created for one extraordinary person.",
 };
 

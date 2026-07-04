@@ -33,7 +33,7 @@ export default async function AdminPage({ searchParams }: { searchParams: { auth
   return (
     <div className="min-h-screen w-full px-6 py-24 bg-[var(--background)]">
       <div className="max-w-4xl mx-auto">
-        <h1 className="font-serif text-4xl mb-2 text-[var(--text)]">The Archive: Director's Panel</h1>
+        <h1 className="font-serif text-4xl mb-2 text-[var(--text)]">For My Forever Favourite: Director's Panel</h1>
         <p className="text-[var(--secondary)] mb-12">Manage chapter unlock dates and media (local JSON storage).</p>
 
         <form action={updateChapterDates} className="bg-[var(--surface)] p-8 border border-[var(--secondary)]/20 paper-shadow flex flex-col gap-8">

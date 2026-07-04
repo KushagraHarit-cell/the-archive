@@ -50,7 +50,7 @@ export default async function MemoryVaultPage() {
             </p>
           </div>
           <Link href="/timeline" className="text-[9px] uppercase tracking-[0.3em] text-[var(--text)] border-b border-[var(--text)]/20 pb-1 hover:border-[var(--text)] transition-colors">
-            Back to Archive
+            Back to For My Forever Favourite
           </Link>
         </div>
 

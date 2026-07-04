@@ -65,7 +65,7 @@ export default async function TimelinePage() {
                     {isCurrent ? (
                       <span className="flex items-center gap-2 text-[8px] uppercase tracking-widest text-[var(--accent)]">
                         <span className="w-1.5 h-1.5 rounded-full bg-[var(--accent)] animate-pulse" />
-                        Current
+                        
                       </span>
                     ) : !isUnlocked && (
                       <span className="text-[8px] uppercase tracking-widest text-[var(--secondary)]">Sealed</span>
