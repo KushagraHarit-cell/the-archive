@@ -67,16 +67,12 @@ export default async function TimelinePage() {
                         <span className="w-1.5 h-1.5 rounded-full bg-[var(--accent)] animate-pulse" />
                         Current
                       </span>
-                    ) : isUnlocked ? (
-                      <span className="text-[8px] uppercase tracking-widest text-[var(--text)] opacity-60">Unlocked</span>
-                    ) : (
+                    ) : !isUnlocked && (
                       <span className="text-[8px] uppercase tracking-widest text-[var(--secondary)]">Sealed</span>
                     )}
                   </div>
 
-                  <span className="text-[9px] uppercase tracking-[0.2em] text-[var(--secondary)] mb-4 block">
-                    {new Date(chapter.unlockDate).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
-                  </span>
+
                   
                   <h2 className="font-serif text-4xl md:text-5xl text-[var(--text)] mb-4 tracking-[-0.02em]">
                     {chapter.title}

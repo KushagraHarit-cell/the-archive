@@ -19,8 +19,9 @@ async function getChapterData(id: string) {
 // Ensure dynamic rendering to check server time accurately on request
 export const dynamic = 'force-dynamic';
 
-export default async function ChapterPage({ params }: { params: { id: string } }) {
-  const chapter = await getChapterData(params.id);
+export default async function ChapterPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  const chapter = await getChapterData(id);
 
   if (!chapter) {
     notFound();

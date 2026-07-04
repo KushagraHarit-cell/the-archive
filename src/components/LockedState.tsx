@@ -19,9 +19,7 @@ export default function LockedState({ unlockDate }: LockedStateProps) {
           Sealed Record
         </h2>
         
-        <p className="font-sans text-[10px] uppercase tracking-[0.3em] text-[var(--accent)] mb-8">
-          Unlocks on {new Date(unlockDate).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
-        </p>
+
 
         <p className="text-[var(--secondary)] text-sm italic font-serif mb-12">
           &quot;Patience reveals beautiful things.&quot;
