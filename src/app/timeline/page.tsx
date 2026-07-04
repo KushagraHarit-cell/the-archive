@@ -27,7 +27,7 @@ export default async function TimelinePage() {
         {/* Header */}
         <div className="mb-12 border-b border-[var(--secondary)]/20 pb-12">
           <h1 className="font-serif text-[clamp(40px,6vw,80px)] text-[var(--text)] tracking-tight leading-none mb-4">
-            The Exhibition
+            For My Queen
           </h1>
           <p className="font-sans text-[10px] uppercase tracking-[0.3em] text-[var(--secondary)]">
             Five installments. One story.
@@ -68,7 +68,7 @@ export default async function TimelinePage() {
                         
                       </span>
                     ) : !isUnlocked && (
-                      <span className="text-[8px] uppercase tracking-widest text-[var(--secondary)]">Sealed</span>
+                      <span className="text-[8px] uppercase tracking-widest text-[var(--secondary)]">Coming Soon..</span>
                     )}
                   </div>
 
